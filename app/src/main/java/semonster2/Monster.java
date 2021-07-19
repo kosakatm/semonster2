@@ -20,7 +20,17 @@ public class Monster {
 
   @Override
   public String toString() {
-
+    if(this.rare==3){
+    return "スーパー"+this.name + ":レア度[" + this.rare + "]\n";
+    }
+    if(this.rare==4){
+    return "ハイパー"+this.name + ":レア度[" + this.rare + "]\n";
+    }
+    if(this.rare==5){
+    return "ウルトラ"+this.name + ":レア度[" + this.rare + "]\n";
+    }
+    else{
     return this.name + ":レア度[" + this.rare + "]\n";
+    }
   }
 }
