@@ -17,6 +17,8 @@ public class App {
         System.out.println(new App().getGreeting());
         Monster monster = new Monster();
         System.out.println(monster.toString());
+        Player player = new Player();
+        System.out.println(player.toString());
     }
     /**
    * 指定した数の0~4(maxRandomNumber)のランダムな数値を作成し，LinkedListに格納して返却する
@@ -32,6 +34,4 @@ public class App {
 
     return randNumList;
   }
-
-
 }
