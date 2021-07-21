@@ -23,4 +23,12 @@ public class Monster {
 
     return this.name + ":レア度[" + this.rare + "]\n";
   }
+
+  public void MonsterFusion(Monster m1, Monster m2)
+  {
+    this.name = m1.name + m2.name;
+    this.rare = m1.rare + m2.rare;
+
+    return;
+  }
 }

@@ -7,20 +7,26 @@ import java.util.LinkedList;
 import java.util.Random;
 
 public class App {
-    final static Random random = new Random();
-    final static int maxRandomNumber = 4;// ランダムな数値の最大値(0～4)
-    public String getGreeting() {
-        return "こんにちは SEMonster";
-    }
+  final static Random random = new Random();
+  final static int maxRandomNumber = 4;// ランダムな数値の最大値(0～4)
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-        Monster monster = new Monster();
-        System.out.println(monster.toString());
-        Player player = new Player();
-        System.out.println(player.toString());
-    }
-    /**
+  public String getGreeting() {
+    return "こんにちは SEMonster";
+  }
+
+  public static void main(String[] args) {
+    System.out.println(new App().getGreeting());
+    Monster monster = new Monster();
+    System.out.println(monster.toString());
+    Player player = new Player();
+    System.out.println(player.toString());
+    Monster monster2 = new Monster();
+    Monster fmonster = new Monster();
+    fmonster.MonsterFusion(monster, monster2);
+    System.out.println(fmonster.toString());
+  }
+
+  /**
    * 指定した数の0~4(maxRandomNumber)のランダムな数値を作成し，LinkedListに格納して返却する
    *
    * @param randNum
