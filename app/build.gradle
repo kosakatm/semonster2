@@ -29,6 +29,6 @@ application {
     mainClass = 'semonster2.App'
 }
 
-tasks.withType(JavaCompile) {
-  options.encoding = 'UTF-8'
+run {
+    standardInput = System.in
 }
